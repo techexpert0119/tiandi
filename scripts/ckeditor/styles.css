@@ -1,0 +1,94 @@
+BODY {
+	font-family:Verdana, Arial, Helvetica, Sans-Serif;
+	font-size:11px;
+	font-weight:normal;
+	color:#000000;
+	margin:10px;
+}
+
+P, TD, LI, INPUT, SELECT, TEXTAREA {
+	font-family:Verdana, Arial, Helvetica, Sans-Serif;
+	font-size:11px;
+	font-weight:normal;
+	color:#000000;
+}
+
+P {
+	font-size:11px;
+	margin:0 0 12px 0;
+}
+
+UL {
+	margin:0 0 12px 15px;
+	padding:0;
+}
+
+UL LI {
+	margin:0 0 10px 15px;
+	padding:0;
+}
+
+H1 {
+  font-size:28px;
+  font-family:'BebasNeue-Regular', Arial;
+  font-weight:normal;
+  margin:0 0 20px 0;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  text-align:center;
+}
+
+H2 {
+  font-size:22px;
+  font-family:'BebasNeue-Regular', Arial;
+  font-weight:normal;
+  margin:0 0 20px 0;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+H3 {
+  font-size:18px;
+  font-family:'BebasNeue-Regular', Arial, Helvetica, Sans-Serif;
+  font-weight:normal;
+  margin:0 0 20px 0;
+  letter-spacing:0;
+}
+
+A:link, A:visited {
+	color:#0000CC;
+	text-decoration:none;
+}
+
+A:hover {
+	color:#CE2C2C;
+	text-decoration:none;
+}
+
+div.greybox {
+  background-color:#E5E5E5;
+  text-align:center;
+  padding:15px 10px;
+  margin:20px auto;
+}
+
+div.bluebox {
+  background-color:#016797;
+  color:#ffffff;
+  text-align:center;
+  padding:15px 10px;
+  margin:20px auto;
+}
+
+div.bluebox p {
+  color:#ffffff;
+}
+
+div.bluebox A:link, div.bluebox A:visited, div.bluebox A:hover {
+  color:#ffffff;
+}
+
+div.greybox p:last-of-type,
+div.bluebox p:last-of-type {
+  margin-bottom:0;
+}

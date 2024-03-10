@@ -1,0 +1,70 @@
+.models #content,
+.models #content h1,
+.models #content h2,
+.models #content div,
+.models #content p {
+  color:#ffffff;
+}
+
+.models #content {
+  background-color:#808080;
+}
+
+.models #modprodhead {
+  text-align:center;
+  padding:20px 0;
+  position:relative;
+}
+
+.models #modproducts {
+  background-color:#F1F1F1;
+  position:relative;
+}
+
+.models #modproducts .modproduct {
+  position:relative;
+}
+
+.models #modproducts .modproduct .modprodtable {
+  display:table;
+  width:100%;
+}
+
+.models #modproducts .modproduct .modprodtable .modprodleft,
+.models #modproducts .modproduct .modprodtable .modprodright {
+  display:table-cell;
+  width:50%;
+  vertical-align:middle;
+  text-align:left;
+}
+
+.models #modproducts .modproduct .modprodtable .modprodleft {
+  padding-right:20px;
+}
+
+.models #modproducts .modproduct .modprodtable .modprodleft .modprodimg {
+  display:none;
+  margin:20px auto;
+}
+
+.models #modproducts .modproduct .modprodtable img {
+  width:100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .models #modproducts .modproduct .modprodtable .modprodleft { 
+    padding:0;
+    text-align:center;
+  }
+  
+  .models #modproducts .modproduct .modprodtable .modprodright {
+    display:none;
+  }
+  .models #modproducts .modproduct .modprodtable .modprodleft .modprodimg {
+    display:block;
+  }
+  .models #modproducts .modproduct .modprodtable .modprodleft .button {
+    margin:0 auto;
+    text-align:center;
+  }
+}

@@ -1,0 +1,93 @@
+.contact #content,
+.contact #content1,
+.contact #content2,
+.contact #content3,
+.contact #content p,
+.contact #content div,
+.newsletter #content,
+.newsletter #content1,
+.newsletter #content2,
+.newsletter #content3,
+.newsletter #content p,
+.newsletter #content div {
+  text-align:left;
+  background-color:#ffffff;
+  color:#000000;
+}
+
+.contact #content h2,
+.contact #content h3 {
+  margin-top:50px;
+}
+
+.contact #content h2:first-of-type,
+.contact #content h3:first-of-type {
+  margin-top:0;
+}
+
+#contactform {
+  color:#000000;
+  font-family: 'Brown-Regular', Arial, Helvetica, Sans-Serif;
+  box-sizing:border-box;
+}
+
+#contactform p {
+  color:#000000;
+  font-family: 'Brown-Regular', Arial, Helvetica, Sans-Serif;
+  line-height:16px;
+}
+
+#contactformd {
+  display:block;
+  padding-right:10px;
+}
+
+.contactformn {
+  display:block;
+  margin-top:20px;
+  margin-bottom:5px;
+}
+
+.contactformi {
+  display:block;
+  margin-top:2px;
+}
+
+.contactformi input[type=text],
+.contactformi textarea {
+  width:100%;
+  box-sizing:border-box;
+  padding:10px 6px;
+  font-family:Arial;
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+  border-radius: 5px 5px 5px 5px;
+}
+
+.contactformi textarea {
+  height:100px;
+}
+
+.contactforms {
+  margin-top:20px;
+  text-align:center;
+}
+
+#contactformt {
+  display:none;
+  margin-top:30px;
+}
+
+.contact #content div #contactformt div,
+.contact #content div #contactformt p {
+  color:#FC0D1B;
+}
+
+#contactformth {
+  letter-spacing: 1px;
+  font-family: 'BebasNeue-Regular', sans-serif;
+  font-size: 20px;
+  margin-bottom:10px;
+}
+
+

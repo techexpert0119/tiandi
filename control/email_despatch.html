@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML> 
+  <HEAD> 
+    <TITLE></TITLE>
+    <!-- style start -->
+    <!-- style end -->
+  </HEAD> 
+  <BODY> 
+    <!-- html start -->
+    <DIV ALIGN="CENTER" STYLE="text-align:center; width:600px; margin:10px auto"> 
+	  <TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="600" STYLE="width:600px;">      
+        <TR> 
+          <TD WIDTH="100%" COLSPAN="2" ALIGN="CENTER" STYLE="text-align:center">
+			<IMG width="200" SRC="<?= $globvars['comp_logo'] ?>" ALT="<?= $globvars['comp_name'] ?>">
+			<HR STYLE="width:100%; clear:both; color:#BBBBBB; margin:20px auto" SIZE="1"> 
+		  </TD>
+        </TR> 
+        <TR> 
+          <TD WIDTH="100%" COLSPAN="2" ALIGN="LEFT" STYLE="text-align:left">
+            <div style="font-size:24px;">Thanks for shopping with us</div>
+			<br><br>
+			Dear <?= $em_vars['bill_forename'] ; ?>
+			<br><br>
+			Fabulous News. Your order reference <?= $em_vars['order_ref'] ; ?> is on it's way! 
+            <? if($em_vars['tracking']) { ?>
+            <br><br>
+            <a href="<?= $em_vars['tracking'] ?>">Click here to track your order</a>
+            <? } ?>
+			<HR STYLE="width:100%; clear:both; color:#BBBBBB; margin:20px auto" SIZE="1">
+		  </TD>
+        </TR> 
+        <TR> 
+          <TD WIDTH="50%" ALIGN="LEFT" STYLE="text-align:left"><B><U>Billing Address</U></B></TD>
+          <TD WIDTH="50%" ALIGN="RIGHT" STYLE="text-align:right"><B><U>Delivery Address</U></B></TD>
+        </TR> 
+        <TR VALIGN="TOP"> 
+          <TD WIDTH="50%" VALIGN="TOP" ALIGN="LEFT" STYLE="text-align:left"><?= $em_vars['bill_addr'] ; ?></TD>
+          <TD WIDTH="50%" VALIGN="TOP" ALIGN="RIGHT" STYLE="text-align:right"><?= $em_vars['deliv_addr'] ; ?></TD>
+        </TR> 
+        <TR> 
+          <TD COLSPAN="2">
+			<BR>
+			  <TABLE BORDER="0" CELLPADDING="4" CELLSPACING="0" WIDTH="100%" SUMMARY="" CLASS="tableb" STYLE="width:100%;"> 
+				<TR> 
+				  <TD ALIGN="LEFT" STYLE="text-align:left"><B>ITEM</B></TD>
+				  <TD ALIGN="LEFT" STYLE="text-align:left"><B>OPTIONS</B></TD>
+				  <TD ALIGN="RIGHT" STYLE="text-align:right"><B>PRICE (<?= $em_vars['cur_code'] ; ?>)</B></TD>
+				  <TD ALIGN="CENTER" STYLE="text-align:center"><B>QUANTITY</B></TD>
+				</TR> 
+				<TR> 
+				  <TD ALIGN="LEFT" COLSPAN="4"><HR STYLE="width:100%; clear:both; color:#BBBBBB;" SIZE="1"></TD>
+				</TR> 
+				<? 
+                foreach($em_vars['items'] as $itm) { ?>
+				<TR VALIGN="TOP"> 
+				  <TD VALIGN="TOP" ALIGN="LEFT" STYLE="text-align:left"><?= $itm['prodname']; ?></TD>
+				  <TD VALIGN="TOP" ALIGN="LEFT" STYLE="text-align:left"><? print str_replace("\r\n",'<br>',$itm['options']); ?></TD>
+				  <TD VALIGN="TOP" ALIGN="RIGHT" STYLE="text-align:right"><?= number_format($itm['price'],2); ?></TD>
+				  <TD VALIGN="TOP" ALIGN="CENTER" STYLE="text-align:center"><?= $itm['quantity']; ?></TD>
+				<? } ?>
+				</TR> 
+				<TR> 
+				  <TD ALIGN="LEFT" COLSPAN="4"><HR STYLE="width:100%; clear:both; color:#BBBBBB;" SIZE="1"></TD>
+				</TR> 
+			  </TABLE>		  
+		  </TD>
+        </TR> 
+        <TR> 
+          <TD COLSPAN="2">
+            <TABLE BORDER="0" CELLPADDING="4" CELLSPACING="0" WIDTH="320" CLASS="tablen" STYLE="width:320px;"> 
+              <? if($em_vars['vdisc_code']) { ?>
+              <TR> 
+                <TD ALIGN="LEFT" WIDTH="240"><B>VOUCHER (<?= $em_vars['vdisc_code']; ?>)</B></TD>
+                <TD ALIGN="RIGHT" WIDTH="80" STYLE="text-align:right;"><B><?= '-' . number_format($em_vars['cur_voucher'],2) ; ?></B></TD>
+              </TR> 
+              <? } if($em_vars['cur_ship'] > 0) { ?>
+              <TR> 
+                <TD ALIGN="LEFT"><B>SHIPPING (<?= $em_vars['ship_text']; ?>)</B></TD>
+                <TD ALIGN="RIGHT" STYLE="text-align:right; "><B><?= number_format($em_vars['cur_ship'],2) ; ?></B></TD>
+              </TR> 
+              <TR> 
+                <TD ALIGN="LEFT" COLSPAN="2"><HR STYLE="width:100%; clear:both; color:#BBBBBB;" SIZE="1"></TD>
+              </TR> 
+              <? } ?>
+              <TR> 
+                <TD ALIGN="LEFT"><B>NET</B></TD>
+                <TD ALIGN="RIGHT" STYLE="text-align:right"><B><?= number_format($em_vars['cur_net'],2) ; ?></B></TD>
+              </TR> 
+              <TR> 
+                <TD ALIGN="LEFT"><B>VAT</B></TD>
+                <TD ALIGN="RIGHT" STYLE="text-align:right"><B><?= number_format($em_vars['cur_vat'],2) ; ?></B></TD>
+              </TR> 
+              <TR> 
+                <TD ALIGN="LEFT"><B>TOTAL (<?= $em_vars['cur_code'] ; ?>)</B></TD>
+                <TD ALIGN="RIGHT" STYLE="text-align:right"><B><?= number_format($em_vars['cur_gross'],2) ; ?></B></TD>
+              </TR> 
+              <TR> 
+                <TD ALIGN="LEFT" COLSPAN="2"><HR STYLE="width:100%; clear:both; color:#BBBBBB;" SIZE="1"></TD>
+              </TR> 
+            </TABLE>
+		  </TD>
+        </TR> 
+        <TR> 
+          <TD WIDTH="100%" COLSPAN="2" ALIGN="LEFT" STYLE="text-align:left">
+			Thanks for shopping with us. If you would like to signup to receive our Journal please <a href="<?= $globvars['base_href'] . '?signup' ?>">click here</a>.
+		  </TD>
+        </TR> 
+        <TR> 
+          <TD WIDTH="100%" COLSPAN="2" ALIGN="LEFT" STYLE="text-align:left">
+			<?= str_replace('[[year]]',date('Y'),$globvars['email_foot_html']) ; ?>
+		  </TD>
+        </TR> 
+	  </TABLE>
+    </DIV> 
+    <!-- html end -->
+    <PRE>
+<!-- text start -->
+Dear <?= $em_vars['bill_forename'] ; ?>
+
+
+Fabulous News. Your order reference <?= $em_vars['order_ref'] ; ?> is on it's way!
+<? 
+if($em_vars['tracking']) { 
+  print $crlf . "Track your order:" . $crlf . $em_vars['tracking'] . $crlf . $crlf;
+}
+?>
+
+Billing Address
+---------------
+<? print str_replace('<br>',$crlf,$em_vars['bill_addr']) ; ?>
+
+
+Delivery Address
+----------------
+<? print str_replace('<br>',$crlf,$em_vars['deliv_addr']) ; 
+
+print $crlf . $crlf ;
+
+print str_pad('ITEM',50,' ',STR_PAD_RIGHT);
+print str_pad('PRICE (' . $em_vars['cur_code'] . ')',10,' ',STR_PAD_LEFT);
+print str_pad('QUANT',10,' ',STR_PAD_LEFT);
+
+print $crlf . str_pad('-',70,'-',STR_PAD_RIGHT) . $crlf ;
+
+foreach($em_vars['items'] as $itm) {
+  print str_pad($itm['prodname'],50,' ',STR_PAD_RIGHT);
+  print str_pad(number_format($itm['price'],2),10,' ',STR_PAD_LEFT);
+  print str_pad(number_format($itm['quantity'],2),10,' ',STR_PAD_LEFT) . $crlf;
+  print str_pad($itm['options'],70,' ',STR_PAD_RIGHT);
+  print $crlf . $crlf ;
+}
+
+print str_pad('-',70,'-',STR_PAD_RIGHT) . $crlf . $crlf ;
+
+if($em_vars['vdisc_code']) {
+  print str_pad('VOUCHER (' . $em_vars['vdisc_code'] . ')',60,' ',STR_PAD_RIGHT) . str_pad(number_format($em_vars['cur_voucher'],2),10,' ',STR_PAD_LEFT) . $crlf . $crlf;
+}
+print str_pad('SHIPPING (' . $em_vars['ship_text'] . ')',60,' ',STR_PAD_RIGHT) . str_pad(number_format($em_vars['cur_ship'],2),10,' ',STR_PAD_LEFT) . $crlf . $crlf;
+print str_pad('NET',60,' ',STR_PAD_RIGHT) . str_pad(number_format($em_vars['cur_net'],2),10,' ',STR_PAD_LEFT) . $crlf;
+print str_pad('VAT',60,' ',STR_PAD_RIGHT) . str_pad(number_format($em_vars['cur_vat'],2),10,' ',STR_PAD_LEFT) . $crlf;
+print str_pad('TOTAL (' . $em_vars['cur_code'] . ')',60,' ',STR_PAD_RIGHT) . str_pad(number_format($em_vars['cur_gross'],2),10,' ',STR_PAD_LEFT) . $crlf;
+ 
+print $crlf . str_pad('-',70,'-',STR_PAD_RIGHT) . $crlf . $crlf ;
+
+print $crlf . $crlf . "Thanks for shopping with us.";
+
+print $crlf . $crlf . str_replace("\r\n",$crlf,str_replace('[[year]]',date('Y'),$globvars['email_foot_text'])) ; 
+?>
+<!-- text end -->
+    </PRE> 
+  </BODY>
+</HTML>

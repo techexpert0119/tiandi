@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+	<url>
+		<loc>https://www.wotdev.co.uk/demo/</loc>
+		<video:video>
+			<video:thumbnail_loc>https://www.wotdev.co.uk/demo/videos/thm/video.jpg</video:thumbnail_loc>
+			<video:title>Home Page Test</video:title>
+			<video:description></video:description>
+			<video:player_loc>https://www.wotdev.co.uk/demo/videos/file/video.mp4</video:player_loc>
+			<video:publication_date>N/A</video:publication_date>
+			<video:family_friendly>yes</video:family_friendly>
+			<video:requires_subscription>no</video:requires_subscription>
+			<video:live>no</video:live>
+		</video:video>
+		<video:video>
+			<video:thumbnail_loc>https://i.vimeocdn.com/video/797382244-0106ae13e902e09d0f02d8f404fa80581f38d1b8b7846b3f8e87ef391ffb8c99-d_200x150</video:thumbnail_loc>
+			<video:title>Vimeo</video:title>
+			<video:description>Vimeo</video:description>
+			<video:player_loc>https://player.vimeo.com/video/347119375</video:player_loc>
+			<video:duration>60</video:duration>
+			<video:publication_date>2021-12-22</video:publication_date>
+			<video:family_friendly>yes</video:family_friendly>
+			<video:requires_subscription>no</video:requires_subscription>
+			<video:uploader info="https://www.wotdev.co.uk/demo/about/our-staff">Vimeo</video:uploader>
+			<video:live>no</video:live>
+		</video:video>
+		<video:video>
+			<video:thumbnail_loc>https://img.youtube.com/vi/EngW7tLk6R8/mqdefault.jpg</video:thumbnail_loc>
+			<video:title>YouTube</video:title>
+			<video:description>YouTube</video:description>
+			<video:player_loc>https://www.youtube.com/embed/EngW7tLk6R8</video:player_loc>
+			<video:duration>60</video:duration>
+			<video:publication_date>2021-12-22</video:publication_date>
+			<video:family_friendly>yes</video:family_friendly>
+			<video:requires_subscription>no</video:requires_subscription>
+			<video:live>no</video:live>
+		</video:video>
+	</url>
+	<url>
+		<loc>https://www.wotdev.co.uk/</loc>
+		<video:video>
+			<video:thumbnail_loc>https://i.vimeocdn.com/video/797382244-0106ae13e902e09d0f02d8f404fa80581f38d1b8b7846b3f8e87ef391ffb8c99-d_200x150</video:thumbnail_loc>
+			<video:title>Vimeo</video:title>
+			<video:description>Vimeo</video:description>
+			<video:player_loc>https://player.vimeo.com/video/347119375</video:player_loc>
+			<video:duration>60</video:duration>
+			<video:publication_date>2021-12-22</video:publication_date>
+			<video:family_friendly>yes</video:family_friendly>
+			<video:requires_subscription>no</video:requires_subscription>
+			<video:uploader info="https://www.wotdev.co.uk/demo/about/our-staff">Vimeo</video:uploader>
+			<video:live>no</video:live>
+		</video:video>
+	</url>
+</urlset>

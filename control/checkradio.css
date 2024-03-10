@@ -1,0 +1,126 @@
+/* Customize the label (the container) */
+.checklabel, .radiolabel {
+  display: inline-block;
+  position: relative;
+  padding-top:2px;
+  padding-left: 20px;
+  height:20px;
+  line-height:16px;
+  margin-right: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap ;
+}
+
+/* Hide the browser's default */
+.checklabel input, .radiolabel input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  top:0;
+  left:0;
+}
+
+/* CHECKBOX */
+
+/* Create a custom checkbox */
+.checkcust {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #ffffff;
+  border:1px solid #828282;
+  -moz-border-radius: 3px; 
+  -webkit-border-radius: 3px; 
+  border-radius: 3px 3px 3px 3px;
+}
+
+/* On mouse-over, add a grey background color */
+.checklabel:hover input ~ .checkcust {
+  background-color: #D6D6D6;
+}
+
+/* When the checkbox is checked, add a dark background */
+.checklabel input:checked ~ .checkcust {
+  background-color: #5E5E5E;
+  border:1px solid #5E5E5E;
+}
+
+/* Create the .checkcust/indicator (hidden when not checked) */
+.checkcust:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the .checkcust when checked */
+.checklabel input:checked ~ .checkcust:after {
+  display: block;
+}
+
+/* Style the .checkcust/indicator */
+.checklabel .checkcust:after {
+  left: 5px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} 
+
+/* RADIO */
+
+/* Create a custom radio button */
+.radiocust {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border:1px solid #6A6A6A;
+}
+
+/* On mouse-over, add a grey background color */
+.radiolabel:hover input ~ .radiocust {
+  background-color: #D6D6D6;
+}
+
+/* When the radio button is checked, add a dark background */
+.radiolabel input:checked ~ .radiocust {
+  background-color: #5E5E5E;
+  border:1px solid #5E5E5E;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radiocust:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radiolabel input:checked ~ .radiocust:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radiolabel .radiocust:after {
+  top: 4px;
+  left: 4px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white;
+} 

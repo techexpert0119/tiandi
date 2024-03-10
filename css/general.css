@@ -1,0 +1,26 @@
+.general #content,
+.general #content1,
+.general #content2,
+.general #content3,
+.general #content p,
+.general #content div {
+  text-align:left;
+  background-color:#ffffff;
+  color:#000000;
+}
+
+.general #content h2 {
+  text-align:center;
+  background-color:#ffffff;
+  color:#000000;
+}
+
+.general #content h2,
+.general #content h3 {
+  margin-top:50px;
+}
+
+.general #content h2:first-of-type,
+.general #content h3:first-of-type {
+  margin-top:0;
+}

@@ -1,0 +1,35 @@
+.about #content,
+.about #content p,
+.about #content div {
+  text-align:center;
+}
+
+.about #modeldev1 {
+  display:table;
+  width:100%;
+  margin-top:20px;
+  background-image:url('../images/about-us.jpg');
+  background-size:cover;
+  background-position:center center;
+  height:25vw;
+  max-height:150px;
+}
+
+.about #modeldev2 {
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+  text-transform:uppercase;
+  color:#145777;
+  font-size:26px;
+  font-family:'BebasNeue-Regular', Arial;
+  letter-spacing:1px;
+}
+
+.about #modeldev2 img {
+  display:inline-block;
+  vertical-align:middle;
+  width:50px;
+  margin-right:20px;
+}
+

@@ -1,0 +1,550 @@
+HTML, BODY {
+  margin:0;
+  background-color:#FFFFFF;
+  color:#3A3A3A;
+}
+
+BODY {
+  font-family: 'Brown-Light', Arial, Helvetica, Sans-Serif;
+  font-size:16px;
+  font-weight:normal;
+  color:#3A3A3A;
+}
+
+P, LABEL, TH, TD, LI, INPUT, SELECT, TEXTAREA {
+  font-family: 'Brown-Light', Arial, Helvetica, Sans-Serif;
+  font-size:16px;
+  font-weight:normal;
+  color:#3A3A3A;
+}
+
+TH {
+  text-align:left;
+}
+
+P {
+  margin:0 0 20px 0;
+  line-height:24px;
+}
+
+p:last-of-type {
+  margin-bottom:0;
+}
+
+LI IMG {
+  display:block;
+}
+
+H1, .h1 {
+  font-size:38px;
+  font-family:'BebasNeue-Regular', Arial;
+  font-weight:normal;
+  margin:0 0 20px 0;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  text-align:center;
+}
+
+H2, .h2 {
+  font-size:32px;
+  font-family:'BebasNeue-Regular', Arial;
+  font-weight:normal;
+  margin:0 0 20px 0;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+H3, .h3 {
+  font-size:24px;
+  font-family:'BebasNeue-Regular', Arial, Helvetica, Sans-Serif;
+  font-weight:normal;
+  margin:0 0 20px 0;
+  letter-spacing:0;
+}
+
+B, strong {
+  font-family: 'Brown-Regular', Arial, Helvetica, Sans-Serif;
+  font-weight:normal;
+}
+
+.headline {
+  margin:10px auto 20px auto;
+  width:70px;
+  height:3px;
+  background-color:#000000;
+  text-align:center;
+}
+
+pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+FORM {
+  margin:0;
+}
+
+INPUT, TEXTAREA, SELECT, .input {
+  font-size:15px;
+  border:1px solid #AAAAAA;
+  padding:10px;
+  letter-spacing:0.5px;
+  background-color:#ffffff;
+  box-sizing:border-box;
+  font-family:Arial;
+  /*
+  -moz-border-radius: 4px; 
+  -webkit-border-radius: 4px; 
+  border-radius: 4px 4px 4px 4px;
+  */
+}
+
+/* ------ standard links ------ */
+
+A:link, A:visited, A:hover {
+  text-decoration:none;
+  color:#016797;
+}
+
+A:hover {
+  color:#000000;
+}
+
+/* ------ classes ------ */
+
+.cleaner {
+  clear:both;
+  height:0;
+  border:none;
+  padding:0;
+  margin:0;
+  font-size:0;
+}
+
+.cleaner IMG {
+  display:block;
+}
+
+.hline {
+  clear:both;
+  height:1px;
+  border:none;
+  width:100%;
+  padding:0;
+  margin:0;
+  font-size:0;
+  background-color:#C0C0C0;
+}
+
+.hline IMG {
+  display:block;
+}
+
+.corners { 
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+  border-radius: 5px 5px 5px 5px;
+}
+
+.border { 
+  /*
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+  border-radius: 5px 5px 5px 5px;
+  */
+  border:1px solid #0F438F;
+}
+
+ul {
+ list-style-type: disc;  
+}
+
+ul, ol {
+  margin:0 0 16px 0;
+  padding:0;
+}
+
+ul li, ol li {
+  margin:5px 0 0 16px;
+  padding:0;
+}
+
+ul li ul li, ol li ol li {
+  margin:5px 0 0 20px;
+  padding:0;
+}
+
+.blue {
+  color:#016797;
+}
+
+.lblue {
+  color:#00A0D4;
+}
+
+.blueb {
+  background-color:#016797;
+}
+
+.white, .white A:link, .white A:visited, .white A:hover {
+  color:#FFFFFF;
+  text-decoration:none;
+}
+.white A:hover {
+  color:#016797;
+}
+
+.black, .black A:link, .black A:visited, .black A:hover {
+  color:#202020;
+  text-decoration:none;
+}
+.black A:hover {
+  color:#016797;
+}
+
+.grey, .grey A:link, .grey A:visited, .grey A:hover {
+  color:#545454;
+  text-decoration:none;
+}
+.grey A:hover {
+  color:#016797;
+}
+
+.lgrey, .lgrey A:link, .lgrey A:visited, .lgrey A:hover {
+  color:#CACACA;
+  text-decoration:none;
+}
+.lgrey A:hover {
+  color:#016797;
+}
+
+sup { color:#CE2C2C; font-size:11px; }
+.error, .red { color:#CE2C2C; }
+.errorb {	background-color:#FFF1F1; }
+.bold { font-weight:bold; font-family: 'Brown-Light', Arial, Helvetica, Sans-Serif; }
+.italics { font-weight:bold; }
+.nobr { white-space: nowrap ; }
+.small { font-size:10px; }
+
+.center,
+.center p,
+.center h1,
+.center h2,
+.center h3,
+.center h4 { 
+  text-align:center; 
+}
+
+.center h1,
+.center h2,
+.center h3,
+.center h4 { 
+  max-width:900px;
+  margin-left:auto;
+  margin-right:auto;
+}
+/* tabler */
+
+.tabler { 
+  border-collapse: separate;
+  border-spacing: 0px;
+}
+.tabler td {
+  border-top: 1px solid #0F438F;
+  border-left: 1px solid #0F438F;
+}
+.tabler td:last-child {
+  border-right: 1px solid #0F438F;
+}
+.tabler tr:last-child td {
+  border-bottom: 1px solid #0F438F;
+}
+.tabler tr:first-child td:first-child {
+  border-top-left-radius: 4px;
+}
+.tabler tr:first-child td:last-child {
+  border-top-right-radius: 4px;
+}
+.tabler tr:last-child td:last-child {
+  border-bottom-right-radius: 4px;
+}
+.tabler tr:last-child td:first-child {
+  border-bottom-left-radius: 4px;
+}
+.tabler tr .th, .tabler .th td {
+  background-color:#D8D8E4;
+}
+.tabler .th {
+  vertical-align: middle;
+}
+.tabler .th td {
+  vertical-align: top;
+  white-space: nowrap ;
+}
+.tabler tr .thb, .tabler .thb td {
+  background-color:#D8D8E4;
+  font-weight:bold;
+}
+.tabler .thb {
+  vertical-align: middle;
+}
+.tabler .thb td {
+  vertical-align: top;
+  white-space: nowrap ;
+}
+
+/* tableb */
+
+.tableb { 
+  border-collapse: collapse;
+}
+.tableb td, .tableb th { 
+  border: 1px solid #0F438F; 
+  border-collapse: collapse;
+}
+.tableb .th, .tableb th {
+  background-color:#D8D8E4;
+  text-align:left;
+}
+
+/* tablei */
+
+.tablei {
+  border-collapse: collapse;
+}
+.tablei td {
+  border: 1px solid #0F438F;
+}
+.tablei tr:first-child td {
+  border-top: 0;
+}
+.tablei tr:last-child td {
+  border-bottom: 0;
+}
+.tablei tr td:first-child, .tablei tr th:first-child {
+  border-left: 0;
+}
+.tablei tr td:last-child, .tablei tr th:last-child {
+  border-right: 0;
+}
+
+/* tablen */
+
+.tablen, .tablen td, .tablen th, .tabler .tablen tr td { 
+  border: none; 
+  border-collapse: collapse;
+  border-spacing: 0px;
+  border-radius: 0px;
+}
+.tablen td {
+  background-color:transparent;
+}
+
+/* button */
+
+.button {
+  margin:20px auto;
+}
+
+.submit, .submit:hover, .button A:link, .button A:visited, .button A:hover {
+  display:inline-block;
+  font-family:'BebasNeue-Regular', Arial;
+  color:#FFFFFF;
+  text-decoration:none;
+  background-color:#FC0D1B;
+  padding:10px 30px;
+  -moz-border-radius: 10px; 
+  -webkit-border-radius: 10px; 
+  border-radius: 10px;
+  text-transform:uppercase;
+  text-align:center;
+  font-weight:normal;
+  font-size:20px;
+  letter-spacing:1px;
+  box-sizing:border-box;
+  margin:10px auto;
+}
+
+.submit:hover, .button A:hover {
+  background-color:#D4000A;
+  color:#FFFFFF;
+}
+
+.submit, .submit:hover {
+  border:0;
+  -webkit-appearance: none;
+}
+
+.submit::-moz-focus-inner, .submita::-moz-focus-inner { 
+  border:0;
+  padding:0;
+ }
+
+.inputa {
+  padding:2px 4px;
+  font-size:11px;
+  height:25px;
+}
+
+/* browse */
+
+.fileUpload {
+  position:relative;
+}
+.browserVisible {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+.browserHidden {
+  position:relative;
+  -moz-opacity:0 ;
+  filter:alpha(opacity: 0);
+  opacity: 0;
+  z-index: 2;
+}
+
+/* Customize the label (the container) */
+.checklabel, .radiolabel {
+  display: inline-block;
+  position: relative;
+  padding-top:2px;
+  padding-left: 20px;
+  height:20px;
+  line-height:16px;
+  margin-right: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap ;
+}
+
+/* Hide the browser's default */
+.checklabel input, .radiolabel input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  top:0;
+  left:0;
+}
+
+/* CHECKBOX */
+
+/* Create a custom checkbox */
+.checkcust {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #ffffff;
+  border:1px solid #828282;
+  -moz-border-radius: 3px; 
+  -webkit-border-radius: 3px; 
+  border-radius: 3px 3px 3px 3px;
+}
+
+/* On mouse-over, add a grey background color */
+.checklabel:hover input ~ .checkcust {
+  background-color: #D6D6D6;
+}
+
+/* When the checkbox is checked, add a dark background */
+.checklabel input:checked ~ .checkcust {
+  background-color: #5E5E5E;
+  border:1px solid #5E5E5E;
+}
+
+/* Create the .checkcust/indicator (hidden when not checked) */
+.checkcust:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the .checkcust when checked */
+.checklabel input:checked ~ .checkcust:after {
+  display: block;
+}
+
+/* Style the .checkcust/indicator */
+.checklabel .checkcust:after {
+  left: 5px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} 
+
+/* RADIO */
+
+/* Create a custom radio button */
+.radiocust {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border:1px solid #6A6A6A;
+}
+
+/* On mouse-over, add a grey background color */
+.radiolabel:hover input ~ .radiocust {
+  background-color: #D6D6D6;
+}
+
+/* When the radio button is checked, add a dark background */
+.radiolabel input:checked ~ .radiocust {
+  background-color: #5E5E5E;
+  border:1px solid #5E5E5E;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radiocust:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radiolabel input:checked ~ .radiocust:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radiolabel .radiocust:after {
+  top: 4px;
+  left: 4px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white;
+} 
+
+.mbonly {
+  display:none;
+}
+
+@media only screen and (max-width: 1140px) {
+  .dtonly {
+    display:none;
+  }
+  .mbonly {
+    display:block;
+  }
+}
+

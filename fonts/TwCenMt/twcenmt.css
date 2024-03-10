@@ -1,0 +1,18 @@
+@font-face {
+	font-family: 'fontscorecomttwcenmt';
+	src: url('./fontscorecomttwcenmt.eot');
+	src: local('fontscorecomttwcenmt'), url('./fontscorecomttwcenmt.woff') format('woff'), url('./fontscorecomttwcenmt.ttf') format('truetype');
+}
+
+
+@font-face { font-family: "TW Cen MT"; src: url("https://www.gladstnlondon.com/wp-content/uploads/2020/11/Tw-Cen-MT.woff") format("woff"); font-style: normal; font-weight: normal; font-display: auto; }
+
+
+
+@font-face {
+	font-family: elementskit;
+	src: url(tw-cen-mt.woff) format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap
+}

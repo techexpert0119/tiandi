@@ -1,0 +1,93 @@
+#slider1_container {
+  position: relative; 
+  width: 800px; 
+  height: 500px; 
+  overflow: hidden;
+  text-align:center;
+  z-index:10;
+}
+
+#slider1_slides {
+  cursor: move;
+  position: absolute; 
+  width: 800px; 
+  height: 500px; 
+  left: 0px; 
+  top: 0px; 
+  overflow: hidden;
+  text-align:center;
+  background-color:#514C4A;
+}
+
+#slider1_slides IMG {
+  height: 500px; 
+  width:auto;
+}
+
+.jssorb09 {
+  position: absolute;
+  bottom: 20px; 
+  left: 0;
+  width:100%;
+  text-align:center;
+}
+
+/*
+.jssorb09 div           (normal)
+.jssorb09 div:hover     (normal mouseover)
+.jssorb09 .av           (active)
+.jssorb09 .av:hover     (active mouseover)
+.jssorb09 .dn           (mousedown)
+*/
+.jssorb09 div, .jssorb09 div:hover, .jssorb09 .av {
+  overflow:hidden;
+  cursor: pointer;
+  height:12px;
+  width:12px;
+  POSITION: absolute;
+  border-radius: 7px;
+}
+.jssorb09 div { background-color: #E2E2E2; }
+.jssorb09 div:hover, .jssorb09 .av:hover { background-color: #807C7B; }
+.jssorb09 .av { background-color: #AA2C2E; }
+.jssorb09 .dn, .jssorb09 .dn:hover { background-color: #807C7B; }
+
+@media only screen and (max-width: 700px) {
+  .jssorb09 {
+    bottom: 10px; 
+  }
+  .jssorb09 div, .jssorb09 div:hover, .jssorb09 .av {
+    height:10px;
+    width:10px;
+    border-radius: 6px;
+  }
+}
+
+/*
+.jssora21l              (normal)
+.jssora21r              (normal)
+.jssora21l:hover        (normal mouseover)
+.jssora21r:hover        (normal mouseover)
+.jssora21ldn            (mousedown)
+.jssora21rdn            (mousedown)
+*/
+
+.jssora21l, .jssora21ldn {
+  width: 55px; height: 55px; top: 215px; left: 10px;
+}
+.jssora21r, .jssora21rdn {
+  width: 55px; height: 55px; top: 215px; right: 10px;
+}
+.jssora21l, .jssora21r, .jssora21ldn, .jssora21rdn {
+   position: absolute;
+   cursor: pointer;
+   display: block;
+   background: url(img/a21.png) no-repeat;
+   overflow:hidden;
+}
+.jssora21l { background-position: -3px -33px; }
+.jssora21r { background-position: -63px -33px; }
+.jssora21l:hover { background-position: -123px -33px; }
+.jssora21r:hover { background-position: -183px -33px; }
+.jssora21ldn { background-position: -243px -33px; }
+.jssora21rdn { background-position: -303px -33px; }

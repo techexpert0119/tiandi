@@ -1,0 +1,19 @@
+.color_field {
+  display:inline-block;
+  vertical-align:middle;
+}
+.color_click {
+  display:inline-block;
+  vertical-align:middle;
+  margin-left:5px;
+  width:16px;
+  height:16px;
+  border-radius:3px;
+  border:1px solid #AAAAAA;
+}
+.color_picker {
+  display:inline-block;
+  position:absolute;
+  margin-left:30px;
+  margin-top:-100px;
+}

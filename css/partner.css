@@ -1,0 +1,90 @@
+.partner #content,
+.partner #content1,
+.partner #content2,
+.partner #content3,
+.partner #content p,
+.partner #content div {
+  text-align:left;
+  background-color:#ffffff;
+  color:#000000;
+}
+
+.partner #content h2 {
+  text-align:center;
+  background-color:#ffffff;
+  color:#000000;
+}
+
+.partner #content h2,
+.partner #content h3 {
+  margin-top:50px;
+}
+
+.partner #content h2:first-of-type,
+.partner #content h3:first-of-type {
+  margin-top:0;
+}
+
+#partnerform {
+  color:#000000;
+  font-family: 'Brown-Regular', Arial, Helvetica, Sans-Serif;
+  box-sizing:border-box;
+}
+
+#partnerform p {
+  color:#000000;
+  font-family: 'Brown-Regular', Arial, Helvetica, Sans-Serif;
+  line-height:16px;
+}
+
+#partnerformd {
+  display:block;
+  padding-right:10px;
+}
+
+.partnerformn {
+  margin-top:20px;
+  margin-bottom:5px;
+}
+
+.partnerformi {
+  margin-top:2px;
+}
+
+.partnerformi input[type=text],
+.partnerformi textarea {
+  width:100%;
+  box-sizing:border-box;
+  padding:10px 6px;
+  font-family:Arial;
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+  border-radius: 5px 5px 5px 5px;
+}
+
+.partnerformi textarea {
+  height:100px;
+}
+
+.partnerforms {
+  margin-top:20px;
+  text-align:center;
+}
+
+#partnerformt {
+  display:none;
+  margin-top:30px;
+}
+
+.partner #content div #partnerformt div,
+.partner #content div #partnerformt p {
+  color:#FC0D1B;
+}
+
+#partnerformth {
+  letter-spacing: 1px;
+  font-family: 'BebasNeue-Regular', sans-serif;
+  font-size: 20px;
+  margin-bottom:10px;
+}
+

@@ -1,0 +1,6 @@
+e:
+cd E:\Sites\WOTSTART\scripts\phpspreadsheet7
+
+"C:\Program Files\PHP\7.4\php.exe" composer.phar outdated
+"C:\Program Files\PHP\7.4\php.exe" composer.phar update
+

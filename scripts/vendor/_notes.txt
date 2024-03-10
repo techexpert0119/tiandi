@@ -1,0 +1,52 @@
+https://getcomposer.org/doc/00-intro.md
+
+https://getcomposer.org/download/
+
+https://www.codewall.co.uk/how-to-install-use-composer-tutorial-for-dummies-with-pdf/#windows-install
+
+https://symfony.com/doc/current/components/var_dumper.html
+
+e:
+cd E:\Sites\WOTSTART\scripts
+
+"C:\Program Files\PHP\7.3\php.exe" composer.phar require --dev symfony/var-dumper
+
+"C:\Program Files\PHP\7.3\php.exe" composer.phar require mpdf/mpdf
+
+"C:\Program Files\PHP\7.3\php.exe" composer.phar require paypal/rest-api-sdk-php:^1.14
+"C:\Program Files\PHP\7.3\php.exe" composer.phar remove paypal/rest-api-sdk-php (added separately for evo/deviate)
+
+"C:\Program Files\PHP\7.3\php.exe" composer.phar require phpclassic/php-shopify
+
+"C:\Program Files\PHP\7.3\php.exe" composer.phar require matthiasmullie/minify
+
+"C:\Program Files\PHP\7.3\php.exe" composer.phar require mailchimp/marketing
+
+# Add to "protected static function init" in php-shopify\lib\CurlRequest.php
+# curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+
+# Add to "public function create" in guzzlehttp\guzzle\src\Handler\CurlFactory.php
+# $options['verify'] = false ;
+
+"C:\Program Files\PHP\7.4\php.exe" composer.phar require --dev symfony/var-dumper
+
+
+
+"C:\Program Files\PHP\7.4\php.exe" composer.phar require firebase/php-jwt
+
+"C:\Program Files\PHP\7.4\php.exe" composer.phar require paragonie/sodium_compat
+
+"C:\Program Files\PHP\7.4\php.exe" composer.phar require pragmarx/google2fa
+"C:\Program Files\PHP\7.4\php.exe" composer.phar require bacon/bacon-qr-code
+
+# update composer
+
+e:
+cd E:\Sites\WOTSTART\scripts
+
+"C:\Program Files\PHP\7.4\php.exe" composer.phar self-update
+"C:\Program Files\PHP\7.4\php.exe" composer.phar outdated
+"C:\Program Files\PHP\7.4\php.exe" composer.phar update
+
+"C:\Program Files\PHP\7.4\php.exe" composer.phar show
+"C:\Program Files\PHP\7.4\php.exe" composer.phar show --tree

@@ -1,0 +1,38 @@
+#slidebar {
+	margin-top:10px;
+	width: 984px;
+	height: 90px;
+}
+
+/* slider container */
+.iosSlider {
+  position: relative;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+  width:984px;
+  height:90px;
+}
+
+/* slider */
+.iosSlider .slider {
+	width:100%;
+	height:100%;
+}
+
+/* slide */
+.iosSlider .slider .slide {
+	float: left;
+  width:96px;
+  height:90px;
+}
+
+.slide a {
+  display: block;
+  text-decoration: none;
+}
+
+.slide img {
+  padding-bottom:2px;
+  border-bottom:#FFFFFF 2px solid;
+}
