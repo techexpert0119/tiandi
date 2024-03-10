@@ -14,7 +14,7 @@ Additional Apache directives for HTTPS: RemoteIPHeader CF-connecting-IP
 Additional nginx directives: real_ip_header CF-Connecting-IP;
 */
 
-$globvars['live_href'] = 'http://local.tiandi.com';
+$globvars['live_href'] = 'https://e.tiandi.com/';
 
 if ($globvars['local_dev']) {
   $globvars['base_href'] = "http://{$_SERVER['SERVER_NAME']}/tiandi/en/";
